@@ -1,0 +1,70 @@
+div{
+    height: 150px;
+    width: 150px;
+    background-color: greenyellow;
+    margin: 2px;
+    float: left;    
+}
+
+.div_efeitos1{
+    transition: 3s ease;
+}
+
+.div_efeitos1:hover{
+    background-color: red;
+    height: 100px;
+    width: 100px;
+}
+
+.div_efeitos2{
+    transition: 3s ease;
+}
+
+.div_efeitos2:hover{
+    transform: skewY(20deg);
+}
+
+.div_efeitos3{
+    transition: 3s ease;
+}
+
+.div_efeitos3:hover{
+    transform: scale(0,1);
+    background-color: red;
+    border-radius: 30px;
+}
+
+.div_efeitos4{
+    transition: 3s ease;
+}
+
+.div_efeitos4:hover{
+    transform: rotateZ(180deg);
+    background-color: red;
+    border-radius: 50px;
+}
+
+.div_efeitos5{
+    transition: 3s ease;
+}
+
+.div_efeitos5:hover{
+    border: 1px solid black;
+    background-color: red;
+    transform: rotate(45deg);
+    transform-origin: 20% 40%;
+}
+
+@keyframes animation_3d{
+    from{
+        transform: rotate3d(0, 0, 0, 0deg);
+    }
+    to{
+        transform: rotate3d(1, 5, 1, 180deg);
+    }
+    
+}
+
+.div_efeitos6{
+    animation: animation_3d 2s ease infinite;
+}
